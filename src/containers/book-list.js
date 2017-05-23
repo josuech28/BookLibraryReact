@@ -40,7 +40,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch){
     //We never selectBook is called, the result should be passed
     // to all of our reducer.
-    return bindActionCreators({ selectBook: selectBook}, dispatch)
+    return bindActionCreators({ selectBook: selectBook }, dispatch);
 }
 
 // Promote BookList from a component to a container - it needs to know

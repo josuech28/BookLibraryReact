@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+
 class BookDetail extends Component {
     render() {
         if(!this.props.book){
@@ -8,10 +9,15 @@ class BookDetail extends Component {
         }
         return (
             <div>
-               <h3>Details for:</h3>
-               <div>
-                   {this.props.book.title}
+               <h3 className="title-heading">
+                   Details for:
+                </h3>
+               <div className="title">
+                   <h2>Title: {this.props.book.title} </h2>
                </div>
+               <div className="number-pages">
+                   # Pages: {this.props.book.pages}
+               </div> 
             </div>
         );
     }
